@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"  >
+<head>
+<meta charset="UTF-8">
+<title>Admin Profile Page</title>
+	<th:block th:insert="include/header :: header">  </th:block>
+</head>
+<body class="bg-light">
+
+	<th:block th:insert="include/navbar :: navbar">  </th:block>
+	
+		<div class="container mb-5">
+			<div class="row">
+				
+				<h1>Admin- Profile page</h1>
+			</div>
+			
+			<header class="header mb-5">
+				<h1 id="title" class="text-center">Hi, [[${user.name }]]</h1>
+				<p id="description" class="text-center">Thank you for Appointment, we will connect you shortly</p>
+			</header>
+		</div>	
+
+</body>
+
+	<th:block th:insert="include/footer :: footer">  </th:block>
+</html>

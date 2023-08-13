@@ -1,0 +1,5 @@
+package com.hyphen.config;
+
+public class JWTConstant {
+
+}

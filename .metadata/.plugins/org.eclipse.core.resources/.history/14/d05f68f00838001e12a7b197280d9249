@@ -1,0 +1,15 @@
+package com.hyphen.config;
+
+import org.springframework.stereotype.Service;
+
+import io.jsonwebtoken.Jwts;
+
+@Service
+public class JwtProvider {
+	
+	public String generateToke(Authentication auth) {
+		String jwt = Jwts.builder()
+				.setIssuedAt(new Date())
+				.
+	}
+}

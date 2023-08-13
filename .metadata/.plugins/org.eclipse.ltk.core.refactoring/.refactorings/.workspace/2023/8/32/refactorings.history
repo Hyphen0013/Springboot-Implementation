@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;10-boot-JWT-implementation&apos;" deleteContents="true" description="Delete resource &apos;10-boot-JWT-implementation&apos;" element1="/10-boot-JWT-implementation" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1691835314907"/>
+</session>

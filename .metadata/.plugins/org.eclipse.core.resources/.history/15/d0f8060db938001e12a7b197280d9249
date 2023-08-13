@@ -1,0 +1,5 @@
+package com.hyphen.request;
+
+public class LoginRequest {
+
+}

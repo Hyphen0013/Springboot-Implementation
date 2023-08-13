@@ -1,0 +1,5 @@
+package com.hyphen.repository;
+
+public interface UserRepository {
+
+}

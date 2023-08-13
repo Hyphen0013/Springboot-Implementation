@@ -1,0 +1,18 @@
+server.application.name = 09-ecommerce-bootJWT
+server.port=8090
+
+
+
+spring.datasource.url = jdbc:mysql://localhost:3306/rel_mapping?createDatabaseIfNotExist=true
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.username=root
+spring.datasource.password=password
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+
+# JPA vendor adaptor configuration
+spring.jpa.database-platform=org.hibernate.dialect.MySQL57Dialect
+spring.jpa.generate-ddl=true
+spring.jpa.show-sql=true
+
+

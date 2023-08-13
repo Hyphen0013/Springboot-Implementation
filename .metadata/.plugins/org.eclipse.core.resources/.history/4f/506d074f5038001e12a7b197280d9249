@@ -1,0 +1,17 @@
+package com.hyphen.model;
+
+import java.time.LocalDateTime;
+
+public class Size {
+	private String name;
+	
+	private int quantity;
+	
+	private LocalDateTime createdAt;
+	
+	private Long createdBy;
+	
+	private LocalDateTime updatedAt;
+	
+	private Long updatedBy;		
+}

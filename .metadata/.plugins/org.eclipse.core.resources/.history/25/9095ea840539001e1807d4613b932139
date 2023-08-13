@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+ databse:
+  image: 'mysql:latest'
+  restart: unless-stopped
+  env_file: .env
+  environment:
+   MYSQL_DATABASE: '${mydatabase}'
+   MYSQL_PASSWORD: '${secret}'
+   MYSQL_ROOT_PASSWORD: '${verysecret}'
+   MYSQL_USER: '${myuser}'
+  ports:
+   - "3306:3306"
+  volumes:
+   - db-data:/var/lib/db
+  networks:
+   - spring-network

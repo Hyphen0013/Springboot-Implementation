@@ -1,0 +1,5 @@
+package com.hyphen.model;
+
+public class Review {
+
+}

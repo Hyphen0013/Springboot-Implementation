@@ -1,0 +1,5 @@
+package com.hyphen.response;
+
+public class AuthResponse {
+
+}
