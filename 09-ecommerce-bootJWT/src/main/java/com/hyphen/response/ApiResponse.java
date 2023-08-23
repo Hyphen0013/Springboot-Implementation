@@ -1,26 +1,19 @@
 package com.hyphen.response;
 
-public class AuthResponse {
-
+public class ApiResponse {
 	private String jwt;
 	private String message;
 	private boolean status;
 
-	public AuthResponse() {
+	public ApiResponse() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public AuthResponse(String jwt, String message, boolean status) {
+	public ApiResponse(String jwt, String message, boolean status) {
 		super();
 		this.jwt = jwt;
 		this.message = message;
-		this.status = status;
-	}
-	
-	public AuthResponse(String jwt, boolean status) {
-		super();
-		this.jwt = jwt;
 		this.status = status;
 	}
 

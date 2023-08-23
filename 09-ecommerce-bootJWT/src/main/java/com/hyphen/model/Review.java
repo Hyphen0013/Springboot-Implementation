@@ -14,11 +14,9 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "review")
 public class Review {
 
 	@Id
-	@Column(name = "review_id", length = 45)
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 

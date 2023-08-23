@@ -15,11 +15,9 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
 @Entity
-@Table(name = "category")
 public class Category {
 
 	@Id
-	@Column(name = "category_id", length = 45)
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 

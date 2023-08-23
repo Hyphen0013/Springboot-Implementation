@@ -21,11 +21,9 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "product")
 public class Product {
 
 	@Id
-	@Column(name = "product_id", length = 45)
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 

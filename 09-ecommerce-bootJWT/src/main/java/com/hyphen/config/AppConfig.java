@@ -25,37 +25,48 @@ public class AppConfig {
 	@Bean
 	public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
 	
-		http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and() // by default spring security store credentials in cookies but we wabt JWT so, use STATELESS
-		.authorizeHttpRequests(Authorize->Authorize.requestMatchers("/api/**").authenticated().anyRequest().permitAll()) // any url start with /api authorize to all
+		http
+		.sessionManagement()
+		.sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+		.and()
+		.authorizeHttpRequests(
+				Authorize -> Authorize.requestMatchers("/api/**").authenticated().anyRequest().permitAll()
+		)
 		.addFilterBefore(new JwtValidator(), BasicAuthenticationFilter.class)
-		.csrf().disable() // for CSRT Token disable from front 
-		.cors().configurationSource(new CorsConfigurationSource() { // enable CORS 
+		.csrf()
+		.disable()
+		.cors()
+		.configurationSource(corsConfigrationSource()) // write here
+		.and()
+		.httpBasic()
+		.and()
+		.formLogin();
+	
+	return http.build();
+	}
+	
+	private CorsConfigurationSource corsConfigrationSource() {
+		return new CorsConfigurationSource() {
 			
 			@Override
 			public CorsConfiguration getCorsConfiguration(HttpServletRequest request) {
-				
 				CorsConfiguration cfg = new CorsConfiguration();
 				cfg.setAllowedOrigins(Arrays.asList(
 						"http://localhost:3000",
 						"http://localhost:4200",
-						"http://localhost:8080"
-				)); // It allow this API from front-end (website)
-				
-				cfg.setAllowedMethods(Collections.singletonList("*")); // Allow all CRUD methods
-				cfg.setAllowCredentials(true); // for credentials
+						"http://localhost:8080",
+						"https://ecommerce-spring-reactjs.vercel.app"
+				));
+				cfg.setAllowedMethods(Collections.singletonList("*"));
+				cfg.setAllowCredentials(true);
 				cfg.setAllowedHeaders(Collections.singletonList("*"));
 				cfg.setExposedHeaders(Arrays.asList("Authorization"));
 				cfg.setMaxAge(3600L);
 				return cfg;
 			}
-		})
-		.and().httpBasic().and().formLogin();
-		return http.build();
+		};
 	}
 	
-	/**
-	 * ENCRYPT PASSWORD BEFORE SAVE
-	 */
 	@Bean
 	public PasswordEncoder passwordEncoder() {
 		return new BCryptPasswordEncoder();

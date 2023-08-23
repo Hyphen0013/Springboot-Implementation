@@ -19,8 +19,7 @@ import jakarta.persistence.Table;
 public class Rating {
 
 	@Id
-	@Column(name = "rating_id", length = 45)
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
 	@ManyToOne

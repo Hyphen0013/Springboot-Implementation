@@ -1,5 +1,6 @@
 package com.hyphen.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.BadCredentialsException;
@@ -15,32 +16,33 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.hyphen.config.JwtProvider;
 import com.hyphen.exception.UserException;
+import com.hyphen.model.Cart;
 import com.hyphen.model.User;
 import com.hyphen.repository.UserRepository;
 import com.hyphen.request.LoginRequest;
 import com.hyphen.response.AuthResponse;
+import com.hyphen.service.CartService;
 import com.hyphen.service.CustomUserServiceImplementation;
 
 @RestController
-@RequestMapping("/api/auth")
+@RequestMapping("/auth")
 public class AuthController {
 
+	@Autowired
 	private UserRepository userRepository;
-	private JwtProvider jwtProvider;
-	private PasswordEncoder passwordEncoder;
-	private CustomUserServiceImplementation customUserServiceImplementation;
 	
-	public AuthController(
-			UserRepository userRepository,
-			JwtProvider jwtProvider,
-			CustomUserServiceImplementation customUserServiceImplementation,
-			PasswordEncoder passwordEncoder
-		) {
-		this.userRepository = userRepository;
-		this.jwtProvider = jwtProvider;
-		this.customUserServiceImplementation = customUserServiceImplementation;
-		this.passwordEncoder = passwordEncoder;
-	}
+	@Autowired
+	private JwtProvider jwtProvider;
+	
+	@Autowired
+	private PasswordEncoder passwordEncoder;
+	
+	@Autowired
+	private CustomUserServiceImplementation customUserDetails;
+	
+	@Autowired
+	private CartService cartService;
+	
 	
 	/**
 	 * USER REGISTRATION
@@ -65,17 +67,19 @@ public class AuthController {
 		createdUser.setLastName(lastName);
 		
 		User savedUser = userRepository.save(createdUser);
+		Cart cart = cartService.createCart(savedUser);
 		
 		Authentication authentication = new UsernamePasswordAuthenticationToken(savedUser.getEmail(), savedUser.getPassword());
 		SecurityContextHolder.getContext().setAuthentication(authentication);
 		
-		String token = jwtProvider.generateToke(authentication);
+		String token = jwtProvider.generateToken(authentication);
 		
 		String message = "User signup successfully";
 				
 		AuthResponse authResponse = new AuthResponse();
 		authResponse.setJwt(token);
 		authResponse.setMessage(message);
+		authResponse.setStatus(true);
 		
 		return new ResponseEntity<AuthResponse>(authResponse, HttpStatus.CREATED);
 	}
@@ -89,28 +93,30 @@ public class AuthController {
 		String username = loginRequest.getEmail();
 		String password = loginRequest.getPassword();
 		
-		Authentication authentication = authenticateUser(username, password);
+		Authentication authentication = authenticate(username, password);
 		SecurityContextHolder.getContext().setAuthentication(authentication);
 
-		String token = jwtProvider.generateToke(authentication);
+		String token = jwtProvider.generateToken(authentication);
 		
 		String message = "User signin successfully";
 				
 		AuthResponse authResponse = new AuthResponse();
 		authResponse.setJwt(token);
 		authResponse.setMessage(message);
-		return new ResponseEntity<AuthResponse>(authResponse, HttpStatus.CREATED);
+		authResponse.setStatus(true);
+		
+		return new ResponseEntity<AuthResponse>(authResponse, HttpStatus.ACCEPTED);
 	}
 
-	private Authentication authenticateUser(String username, String password) {
-		UserDetails userDetails = customUserServiceImplementation.loadUserByUsername(username);
+	private Authentication authenticate(String username, String password) {
+		UserDetails userDetails = customUserDetails.loadUserByUsername(username);
 		
 		if(userDetails == null) {
-			throw new BadCredentialsException("Invalid Username");
+			throw new BadCredentialsException("Invalid username");
 		}
 		
 		if(!passwordEncoder.matches(password, userDetails.getPassword())) {
-			throw new BadCredentialsException("Invalid Password");
+			throw new BadCredentialsException("password not mathced");
 		}
 		
 		return new UsernamePasswordAuthenticationToken(userDetails, null, userDetails.getAuthorities());

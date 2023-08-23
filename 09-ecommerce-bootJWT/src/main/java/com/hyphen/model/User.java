@@ -25,33 +25,28 @@ import jakarta.persistence.Table;
 public class User {
 
 	@Id
-	@Column(name = "user_id", length = 45)
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 
-	@Column(name = "first_name")
 	private String firstName;
 
-	@Column(name = "last_name")
 	private String lastName;
 
 	private String password;
 
 	private String email;
 
-	@Column(name = "user_role")
 	private String role;
 
 	private String mobile;
 
-	@OneToMany(mappedBy = "user", cascade = CascadeType.ALL) // ALL because if we delete use then all address deleted
-																// from address table
+	@OneToMany(mappedBy = "user", cascade = CascadeType.ALL) // ALL because if we delete use then all address deleted														// from address table
 	private List<Address> address = new ArrayList<>();
 
 	@Embedded // this is not Entity so Embedded
 	@ElementCollection // so, it make separate table
 	@CollectionTable(name = "payment_information", joinColumns = @JoinColumn(name = "user_id")) // we can change table
-																								// row name
+																				// row name
 	private List<PaymentInformation> paymentInformations = new ArrayList<>();
 
 	@OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
