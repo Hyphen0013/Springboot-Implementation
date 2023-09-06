@@ -5,13 +5,18 @@
 		<item key="DIALOG_Y_ORIGIN" value="347"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="sendMessage"/>
+		<item key="selection" value="findProductById"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="findProductById"/>
+			<item value="updateProduct"/>
+			<item value="local"/>
+			<item value="date"/>
+			<item value="MessageException"/>
 			<item value="sendMessage"/>
 			<item value="createGroup"/>
 			<item value="findAllChatByUserId"/>
@@ -22,18 +27,13 @@
 			<item value="user"/>
 			<item value="searchUserNotLoggedIn"/>
 			<item value="optional"/>
-			<item value="optiona"/>
-			<item value="findProductById"/>
-			<item value="option"/>
-			<item value="findByNameAndParent"/>
-			<item value="optio "/>
 		</list>
 		<list key="replacehistory">
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="783"/>
-		<item key="DIALOG_Y_ORIGIN" value="319"/>
+		<item key="DIALOG_X_ORIGIN" value="1109"/>
+		<item key="DIALOG_Y_ORIGIN" value="224"/>
 		<item key="DIALOG_WIDTH" value="363"/>
 		<item key="DIALOG_HEIGHT" value="437"/>
 		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|11.0|0|GTK|1|"/>

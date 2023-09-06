@@ -10898,3 +10898,429 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-02 19:44:22.745
 !MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+!SESSION 2023-09-04 07:48:43.754 -----------------------------------------------
+eclipse.buildId=4.18.1.202305021758
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2023-09-04 07:48:48.420
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-09-04 07:48:55.291
+!MESSAGE Logback config file: /home/hyphen/Documents/SpringBoot/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.1.100.20230106-1511.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-09-04 07:49:10.580
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-09-04 07:49:10.580
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-04 07:49:23.712
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-04 07:49:23.713
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-04 07:49:23.714
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-04 07:49:23.715
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-04 07:49:23.724
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-04 07:49:23.728
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.jface 2 0 2023-09-04 07:49:25.678
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-09-04 07:49:25.678
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		WorkbenchHandlerServiceHandler("org.springframework.tooling.boot.ls.ToggleComment"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-04 07:49:27.307
+!MESSAGE Boot project ADDED: 01-SpringBootMVC_jsp
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-04 07:49:27.307
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-04 07:49:27.309
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-04 07:49:27.334
+!MESSAGE Boot project ADDED: 02-SpringBoot-DI
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-04 07:49:27.498
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-09-04 07:49:27.501
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 18789
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-04 07:49:27.506
+!MESSAGE Boot project ADDED: 03-SpringBoot-DataJPA
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-04 07:49:27.512
+!MESSAGE Boot project ADDED: 04-SpringBoot-DataJPA-Mapping
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-04 07:49:27.548
+!MESSAGE Boot project ADDED: 05-SpringBoot-springSecurity6.0
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-04 07:49:27.783
+!MESSAGE Boot project ADDED: 06-SpringBoot-springSecurity-database
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-04 07:49:28.067
+!MESSAGE Boot project ADDED: 07-SpringBoot-springSecurity-RegisterLogin
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-04 07:49:28.211
+!MESSAGE Boot project ADDED: 08-SpringBoot-REST-API-Log-Register
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-04 07:49:28.414
+!MESSAGE Boot project ADDED: 09-ecommerce-bootJWT
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-04 07:49:28.483
+!MESSAGE Boot project ADDED: 10-SecureAPI-JWT-bouali-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-04 07:49:28.502
+!MESSAGE Boot project ADDED: 11-twitterClone3.1JWT
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-04 07:49:28.541
+!MESSAGE Boot project ADDED: 12-SpringBoot3.1JWT-Oauth2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-04 07:49:28.638
+!MESSAGE Boot project ADDED: 13-WhatsApp-webscoket-jwt
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-04 07:49:33.492
+!MESSAGE Boot project ADDED: 15-Springboot-RESTful-bouali
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-09-04 07:50:07.787
+!MESSAGE executing callback sts4.classpath.AQBXHrWs FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-09-04 07:50:07.788
+!MESSAGE TimeoutException
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-04 14:47:25.791
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-04 14:47:25.793
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-04 14:47:25.796
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-04 14:47:25.798
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-04 14:47:25.819
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-04 14:47:25.825
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-04 18:41:11.356
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-04 18:41:11.357
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-04 18:41:11.368
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-04 18:41:11.369
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-04 18:41:11.378
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-04 18:41:11.385
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-04 22:34:33.556
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-04 22:34:33.556
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-04 22:34:33.557
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-04 22:34:33.557
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-04 22:34:33.562
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-04 22:34:33.564
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+!SESSION 2023-09-05 14:22:00.440 -----------------------------------------------
+eclipse.buildId=4.18.1.202305021758
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2023-09-05 14:22:05.398
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-09-05 14:22:13.784
+!MESSAGE Logback config file: /home/hyphen/Documents/SpringBoot/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.1.100.20230106-1511.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-09-05 14:22:30.611
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-09-05 14:22:30.612
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-05 14:22:43.096
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-09-05 14:22:43.128
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 8335
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-05 14:22:50.558
+!MESSAGE Boot project ADDED: 01-SpringBootMVC_jsp
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-05 14:22:50.558
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-05 14:22:50.559
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-05 14:22:50.560
+!MESSAGE Boot project ADDED: 02-SpringBoot-DI
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-05 14:22:50.597
+!MESSAGE Boot project ADDED: 03-SpringBoot-DataJPA
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-05 14:22:50.603
+!MESSAGE Boot project ADDED: 04-SpringBoot-DataJPA-Mapping
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-05 14:22:50.629
+!MESSAGE Boot project ADDED: 05-SpringBoot-springSecurity6.0
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-05 14:22:50.854
+!MESSAGE Boot project ADDED: 06-SpringBoot-springSecurity-database
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-05 14:22:50.939
+!MESSAGE Boot project ADDED: 07-SpringBoot-springSecurity-RegisterLogin
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-05 14:22:51.138
+!MESSAGE Boot project ADDED: 08-SpringBoot-REST-API-Log-Register
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-05 14:22:51.327
+!MESSAGE Boot project ADDED: 09-ecommerce-bootJWT
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-05 14:22:51.512
+!MESSAGE Boot project ADDED: 10-SecureAPI-JWT-bouali-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-05 14:22:51.518
+!MESSAGE Boot project ADDED: 11-twitterClone3.1JWT
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-05 14:22:51.585
+!MESSAGE Boot project ADDED: 12-SpringBoot3.1JWT-Oauth2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-05 14:22:51.587
+!MESSAGE Boot project ADDED: 13-WhatsApp-webscoket-jwt
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-05 14:22:51.720
+!MESSAGE Boot project ADDED: 15-Springboot-RESTful-bouali
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-09-05 14:23:25.726
+!MESSAGE executing callback sts4.classpath.AvQfHzuB FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-09-05 14:23:25.730
+!MESSAGE TimeoutException
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jface 2 0 2023-09-05 14:34:28.766
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-09-05 14:34:28.766
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		WorkbenchHandlerServiceHandler("org.springframework.tooling.boot.ls.ToggleComment"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+!SESSION 2023-09-06 21:01:41.853 -----------------------------------------------
+eclipse.buildId=4.18.1.202305021758
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2023-09-06 21:01:46.755
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2023-09-06 21:01:54.084
+!MESSAGE Logback config file: /home/hyphen/Documents/SpringBoot/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.1.100.20230106-1511.xml
+
+!ENTRY org.eclipse.jface 2 0 2023-09-06 21:02:11.850
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-09-06 21:02:11.850
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-06 21:02:23.822
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-09-06 21:02:23.865
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 7796
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-06 21:02:32.308
+!MESSAGE Boot project ADDED: 01-SpringBootMVC_jsp
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-06 21:02:32.308
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-06 21:02:32.309
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-06 21:02:32.523
+!MESSAGE Boot project ADDED: 02-SpringBoot-DI
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-06 21:02:32.871
+!MESSAGE Boot project ADDED: 03-SpringBoot-DataJPA
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-06 21:02:33.160
+!MESSAGE Boot project ADDED: 04-SpringBoot-DataJPA-Mapping
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-06 21:02:33.212
+!MESSAGE Boot project ADDED: 05-SpringBoot-springSecurity6.0
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-06 21:02:33.336
+!MESSAGE Boot project ADDED: 06-SpringBoot-springSecurity-database
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-06 21:02:33.364
+!MESSAGE Boot project ADDED: 07-SpringBoot-springSecurity-RegisterLogin
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-06 21:02:33.552
+!MESSAGE Boot project ADDED: 08-SpringBoot-REST-API-Log-Register
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-06 21:02:33.586
+!MESSAGE Boot project ADDED: 09-ecommerce-bootJWT
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-06 21:02:33.888
+!MESSAGE Boot project ADDED: 10-SecureAPI-JWT-bouali-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-06 21:02:34.119
+!MESSAGE Boot project ADDED: 11-twitterClone3.1JWT
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-06 21:02:34.236
+!MESSAGE Boot project ADDED: 12-SpringBoot3.1JWT-Oauth2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-06 21:02:34.435
+!MESSAGE Boot project ADDED: 13-WhatsApp-webscoket-jwt
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-06 21:02:34.436
+!MESSAGE Boot project ADDED: 15-Springboot-RESTful-bouali
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-09-06 21:03:09.813
+!MESSAGE executing callback sts4.classpath.WwBmmqUd FAILED
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-09-06 21:03:09.814
+!MESSAGE TimeoutException
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.springframework.tooling.ls.eclipse.commons.LSP4ECommandExecutor.executeClientCommand(LSP4ECommandExecutor.java:37)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.flush(SendClasspathNotificationsJob.java:178)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-06 21:49:24.713
+!MESSAGE Classpath changed for project: 10-SecureAPI-JWT-bouali-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-06 21:49:24.713
+!MESSAGE Boot project REMOVED: 10-SecureAPI-JWT-bouali-1

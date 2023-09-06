@@ -47,8 +47,11 @@ public class SecurityConfig {
 		 */
 		
 //		Role based Authentication
-		http.csrf().disable()
-		.authorizeHttpRequests().requestMatchers("/user/**").hasRole("USER")
+		http
+		.csrf()
+		.disable()
+		.authorizeHttpRequests()
+		.requestMatchers("/user/**").hasRole("USER")
 		.requestMatchers("/admin/**").hasRole("ADMIN")
 		.requestMatchers("/**").permitAll().and()
 		.formLogin().loginPage("/signin").loginProcessingUrl("/user-login")
